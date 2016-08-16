@@ -1,0 +1,19 @@
+{
+  "name": "ncdc-temperature-normals",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "munge": "node parse-stations.js && node generate-normals-json.js && node join-stations-normals.js",
+    "load": "node load-ncdc-normals.js",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.14.1",
+    "mongodb": "^2.2.5"
+  }
+}
